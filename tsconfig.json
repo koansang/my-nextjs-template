@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": [
       "dom",
@@ -17,7 +18,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "~/components/*": ["./src/components/*"],
+      "~/hooks/*": ["./src/hooks/*"],
+      "~/utils/*": ["./src/utils/*"],
+      "~/recoil/*": ["./src/recoil/*"]
+    }
   },
   "include": [
     "next-env.d.ts",
